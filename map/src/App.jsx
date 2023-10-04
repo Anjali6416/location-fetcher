@@ -68,10 +68,10 @@ function App() {
           </Row>
         </Form>
       </div>
-      <div>
+      <div className="p-3">
       <Map mapData={mapData} />
       </div>
-      <div>
+      <div style={{width: '100vw', margin: '20px auto', display: 'flex', justifyContent: 'center'}}>
         <Graph />
       </div>
     </div>

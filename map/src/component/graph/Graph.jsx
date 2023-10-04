@@ -20,7 +20,7 @@ const EChartComponent = () => {
   };
 
   return (
-    <div style={{ marginTop:"20px", boxShadow:"0 0 10px black",padding:"5px"}}>
+    <div style={{ boxShadow:"0 0 10px black", width: '700px', borderRadius:'10px'}}>
       <div>
         <h1 style={{marginTop:"20px",textAlign:"center"}}>Graph</h1>
       </div>

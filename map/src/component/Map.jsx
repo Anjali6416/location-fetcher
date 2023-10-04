@@ -76,7 +76,7 @@ const MARKER_ICON_URL = {
 };
 
 const MapComponent = ({ mapData }) => {
-  const { lat =  28.603087, lng = 77.3671873, icon = "school" } = mapData;
+  const { lat = 28.603087, lng = 77.3671873, icon = "school" } = mapData;
   const mapRef = useRef(null);
   const markerRef = useRef(null);
 
@@ -122,10 +122,7 @@ const MapComponent = ({ mapData }) => {
   }, [mapData]);
 
   return (
-    <div
-      id={`map`}
-      style={{ height: "400px", width: "100%", overflow:"hidden" }}
-    />
+    <div id={`map`} style={{ height: "600px", width: "80%", margin: "auto", boxShadow:"0 0 10px black", borderRadius: '10px' }} />
   );
 };
 
