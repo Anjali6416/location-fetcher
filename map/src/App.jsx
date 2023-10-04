@@ -29,15 +29,15 @@ function App() {
     setMapData({ ...inputData });
   };
   return (
-    <div>
-      <div style={{padding:"20px", width :"200%" ,background:"black"}}>
-        <h1 style={{color:"white",textAlign:"center",marginBottom:"20px"}}>Search Location</h1>
+    <div style={{background:"EEEEEE"}}>
+      <div style={{padding:"20px" ,background:"black"}}>
+        <h1 style={{color:"white",textAlign:"center",marginBottom:"20px"}}>Search Place</h1>
         <Form onSubmit={handleFormSubmit} className="mb-3">
           <Row>
             <Col>
               <Form.Control
                 type="number"
-                placeholder="Latitude"
+                placeholder="Enter Latitude"
                 name="lat"
                 onChange={handleInputChange}
               />
@@ -45,7 +45,7 @@ function App() {
             <Col>
               <Form.Control
                 type="number"
-                placeholder="Longitude"
+                placeholder="Enter Longitude"
                 name="lng"
                 onChange={handleInputChange}
               />
@@ -60,16 +60,15 @@ function App() {
                 <option value="collage">Collage</option>
               </Form.Select>
             </Col>
-            <Col>
+            <Col className='d-flex justify-flex-start'>
               <Button variant="primary" type="submit">
-                Submit
+                Search
               </Button>
             </Col>
           </Row>
         </Form>
       </div>
-      <div style={{marginLeft:"50%"}} >
-
+      <div>
       <Map mapData={mapData} />
       </div>
       <div>

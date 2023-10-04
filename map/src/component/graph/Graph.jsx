@@ -20,9 +20,9 @@ const EChartComponent = () => {
   };
 
   return (
-    <div style={{marginLeft:"50%",marginRight:"-45%", marginTop:"20px", boxShadow:"0 0 10px black",padding:"5px"}}>
+    <div style={{ marginTop:"20px", boxShadow:"0 0 10px black",padding:"5px"}}>
       <div>
-        <h1 style={{marginTop:"20px"}}>Graph</h1>
+        <h1 style={{marginTop:"20px",textAlign:"center"}}>Graph</h1>
       </div>
       <ReactECharts option={option} />;
     </div>
